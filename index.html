@@ -39,8 +39,8 @@
   var map = mapbox.map('map'),
       layers = document.getElementById('layers');
 
-  map.addLayer(mapbox.layer().id('apduplessis.income_2006').composite(false));
-  map.addLayer(mapbox.layer().id('apduplessis.income_2010').composite(false));
+  map.addLayer(mapbox.layer().id('apduplessis.map-bovrcawq,apduplessis.income_2006').composite(false));
+  map.addLayer(mapbox.layer().id('apduplessis.map-bovrcawq,apduplessis.income_2010').composite(false));
   map.zoom(3);
 
   var l_parent = map.getLayerAt(1).parent,
