@@ -30,6 +30,10 @@
     cursor:pointer;
     -webkit-user-select: none;
   }
+  #title {
+    z-index: 1000;
+    width: 100%;
+  }
 </style>
 <div id='swipe'>
     <div id='handle'>drag</div>
@@ -41,8 +45,8 @@
 
   map.addLayer(mapbox.layer().id('apduplessis.map-bovrcawq,apduplessis.income_2006').composite(false));
   map.addLayer(mapbox.layer().id('apduplessis.map-bovrcawq,apduplessis.income_2010').composite(false));
-  map.zoom(6);
-  map.center({ lat: 30.74, lon: -93.98});
+  map.zoom(5);
+  map.center({ lat: 35.74, lon: -93.98});
 
   var l_parent = map.getLayerAt(1).parent,
       handle = document.getElementById('handle'),
