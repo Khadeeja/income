@@ -10,9 +10,6 @@
   </style>
 </head>
 <body>
-<div id="map_key" style="z-index:1000">
-<img src="http://farm9.staticflickr.com/8463/8131891152_586ab49eb2.jpg" width="304" height="228">
-</div>
 <style type='text/css'>
   #swipe {
     background:#fff;
@@ -43,6 +40,9 @@
     <div id='handle'>drag</div>
 </div>
 <div id='map'></div>
+<div id="map_key" style="z-index:2000">
+<img src="http://farm9.staticflickr.com/8463/8131891152_586ab49eb2.jpg" width="304" height="228">
+</div>
 <script>
   var map = mapbox.map('map'),
       layers = document.getElementById('layers');
