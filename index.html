@@ -42,6 +42,7 @@
   map.addLayer(mapbox.layer().id('apduplessis.map-bovrcawq,apduplessis.income_2006').composite(false));
   map.addLayer(mapbox.layer().id('apduplessis.map-bovrcawq,apduplessis.income_2010').composite(false));
   map.zoom(3);
+  map.center({ lat: 40.74, lon: -73.98);
 
   var l_parent = map.getLayerAt(1).parent,
       handle = document.getElementById('handle'),
